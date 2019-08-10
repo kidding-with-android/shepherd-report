@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'month_list/month_list.dart';
+import 'month_list.dart';
 
 void main() => runApp(MyApp());
 

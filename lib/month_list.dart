@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
+import 'member_list.dart';
+
 class MonthList extends StatefulWidget {
   @override
   MonthListState createState() => MonthListState();
@@ -21,7 +23,7 @@ class MonthListState extends State<MonthList> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Relatórios Apascentador'),
+        title: Text('Relatórios'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.list),
@@ -105,6 +107,12 @@ class MonthListState extends State<MonthList> {
         color: alreadySaved ? Colors.red : null,
       ),
       onTap: () {
+				Navigator.of(context).push(
+					MaterialPageRoute<void>(
+						builder: (BuildContext context) => MemberList()
+					),
+				);
+
         setState(() {
           if (alreadySaved) {
             _saved.remove(month);
