@@ -29,6 +29,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  flutter_launcher_icons: "^0.6.1"
+
+dependency_overrides:
+  image: 2.0.7
+
+flutter_icons:
+  android: true
+  ios: true
+  # image_path_android: "images/sheep.png"
+  image_path: "images/icon.png"
+  adaptive_icon_foreground: "images/sheep.png"
+  adaptive_icon_background: "#FFEB3B"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
